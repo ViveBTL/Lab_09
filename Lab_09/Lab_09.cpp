@@ -56,10 +56,7 @@ int main()
         elements.push_back(last);
         last = "";
     }
-    //for (auto elem : elements) {
-    //    std::cout << elem << "   ";
-    //}
-    //std::cout << "\n!!!!!!!!!!!!!\n";
+    
    for (auto elem : elements) {
         if (elem == "+" || elem == "-" || elem == "/" || elem == "*") {
             if (st.empty() || st.top() == "(" || priority(st.top()) < priority(elem)) {
